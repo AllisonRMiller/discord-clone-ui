@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import {
+//   BrowserRouter as Router,
+
+// } from 'react-router-dom';
 import './index.css';
-import App from './App';
+// import Landing from './landing';
+import App from './App.js';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <React.StrictMode>
+   <App />
+ </React.StrictMode>,
+ 
+  // <React.StrictMode>
+  //   <Landing />
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
