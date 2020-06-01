@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/"
+        <Route exact path="/"  //This should be if logged in dashboard, else landing
         // render={({history})=><Landing history={history}/>}
         >
           <Landing />

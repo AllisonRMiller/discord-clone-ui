@@ -4,8 +4,8 @@ import {
     Switch,
     Route,
     Link
-  } from 'react-router-dom';
-import { Row, Col, Jumbotron, Button, Container } from 'reactstrap';
+} from 'react-router-dom';
+import { Row, Col, Jumbotron, Button, Container, FormGroup, Form, Label, Input, } from 'reactstrap';
 
 const Landing = (props) => {
     return (
@@ -19,14 +19,17 @@ const Landing = (props) => {
                             <hr className="my-2" />
                             <p>Get started now!</p>
                             <p className="lead">
-                                <Button className="mr-3" 
-                                tag={Link} to="/signup" 
-                                color="primary">Sign Up</Button>
-                                <Button 
-                                tag={Link} to="/login" 
-                                color="primary" 
-                                // onClick={()=>history.push("/login")}
-                                >Log In</Button>
+                                <Form>
+                                    <FormGroup>
+                                        <Label for="Search">Where</Label>
+                                        <Input
+                                            type="search"
+                                            name="search"
+                                            id="exampleSearch"
+                                            placeholder="search placeholder"
+                                        />
+                                    </FormGroup>
+                                </Form>
                             </p>
                         </Container>
                     </Jumbotron>

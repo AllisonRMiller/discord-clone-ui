@@ -6,11 +6,11 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reac
 const SignupForm = (props) => {
     return (
         <div>
-                    <Container id="signup-container">
-            <Row className="mt-5">
-                <Col md={{size: 6, offset: 3}}>
+            <Container id="signup-container">
+                <Row className="mt-5">
+                    <Col md={{ size: 6, offset: 3 }}>
                         <Form className="mt-5 p-4 bg-dark text-light">
-                        <FormGroup>
+                            <FormGroup>
                                 <Label for="username">User Name</Label>
                                 <Input type="username" name="username" id="username" placeholder="with a placeholder" />
                             </FormGroup>
@@ -22,11 +22,11 @@ const SignupForm = (props) => {
                                 <Label for="Password">Password</Label>
                                 <Input type="password" name="password" id="Password" placeholder="password placeholder" />
                             </FormGroup>
-                            <Button>Submit</Button>
+                            <Button>Sign Up</Button>
                         </Form>
-                </Col>
-            </Row>
-                    </Container>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

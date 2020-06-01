@@ -21,7 +21,7 @@ code {
   overflow: auto;
 }
 
-#login-container{
+#login-container, #signup-container{
   background-image: url("discordloginbg.jpg");
   background-size: cover;
 }
